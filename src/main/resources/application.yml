@@ -1,0 +1,22 @@
+server:
+  port: 9999
+
+application:
+  unidbg:
+    dynarmic: false
+    verbose: false
+    async: true
+
+spring:
+  application:
+    name: ibox-server
+  profiles:
+    active: pro
+  task:
+    execution:
+      pool:
+        allow-core-thread-timeout: true
+        core-size: 100
+        keep-alive: 60s
+        max-size: 100
+
